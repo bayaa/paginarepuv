@@ -1,0 +1,50 @@
+<html>
+ <head>
+ <script>
+
+   function valida(user){
+   var expregular = /([A-Z+ a-z+ 0-9]{8})/;
+   if (expregular.test(user)){
+    
+   alert ('Ingresando');
+  
+   
+   } else {
+   alert ('Error');
+   }
+   
+   }
+
+   function valida(pass){
+   var expregular2 = /([A-Z+ a-z+ 0-9]{8})/;
+   if (expregular2.test(pass)){
+   alert ('Ingresando');
+   location.href="https://brayanwebbaserepuv.000webhostapp.com/";
+   } else {
+   alert ('Error');
+   }
+   
+   }
+
+ </script>
+ </head>
+
+   <body bgcolor="#000000">
+   <font color="#FFFFFF">
+
+  <body>
+  <form>
+  <center>
+
+   <label> Username: </label>
+   <Input type= "Text" name = "user">
+  <br>
+   <label> Password: </label>
+   <Input type= "Text" name = "pass">
+  </br>
+   <Input type= "Button" name= "BotonEntrar" Value="Entrar" onclick = "valida(pass.value)">
+
+  </center>
+  </form>
+  </body>
+</html>
